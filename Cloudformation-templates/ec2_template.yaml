@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Create an EC2 Instance with Parameters
+
+Parameters: 
+  InstanceType:
+    Type: String
+    Default: t2.micro
+    Description: EC2 Instance Type
+    AllowedValues: 
+      - t2.micro
+      - t2.small
+      - t2.medium
+    ConstraintDescription: Must be a valid EC2 Type
+
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Name of the existing EC2 Keypair
+
+Resources:
+  myEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: !Ref KeyName
+      ImageId: ami-037774efca2da0726
+      InstanceType: !Ref InstanceType
+      Tags:
+        - Key: Name
+          Value: EC2_template
+
+Outputs:
+  InstanceId:
+    Description: Instance ImageId
+    Value: !Ref myEC2Instance
