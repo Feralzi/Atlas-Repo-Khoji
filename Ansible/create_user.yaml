@@ -1,0 +1,16 @@
+---
+- name: Create user 
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Create user John
+    user:
+      name: John
+      group: wheel
+      append: yes
+
+  - name: Create group
+    group:
+      name: John
+      
