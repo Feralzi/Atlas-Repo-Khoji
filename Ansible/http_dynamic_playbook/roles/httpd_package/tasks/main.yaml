@@ -1,0 +1,5 @@
+- name: This will install httpd
+  yum:
+    name: httpd
+    state: latest
+  notify: Start httpd

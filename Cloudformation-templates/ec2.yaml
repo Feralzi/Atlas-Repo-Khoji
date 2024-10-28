@@ -1,0 +1,13 @@
+Resources:
+  myec2:
+    Type: AWS::EC2::Instance
+    Description: Creating my first EC2
+    Properties:
+      ImageId: ami-037774efca2da0726
+      InstanceType: t2.micro
+      KeyName: VM1-key
+      Tags: 
+        - Key: Name 
+          Value: cfm-VM
+        - Key: OS
+          Value: Linux

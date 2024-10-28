@@ -1,0 +1,10 @@
+---
+- name: Copy files
+  hosts: all
+
+  tasks:
+  - name: Copy files
+    copy:
+      src: /tmp/copyfile.txt
+      dest: /tmp/copyfile.txt
+      mode: "0644"

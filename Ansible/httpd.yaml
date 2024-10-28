@@ -1,0 +1,23 @@
+---
+- name: This will run and install httpd
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: This will install httpd
+    yum:
+      name: httpd
+      state: latest
+
+  - name: This will start the httpd
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+
+  - name: Edit the html file
+    lineinfile:
+      path: /var/www/html/index.html
+      line: I created this with Ansible
+      create: yes
+      state: present

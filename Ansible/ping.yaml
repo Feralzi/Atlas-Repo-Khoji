@@ -1,0 +1,6 @@
+---
+- name: Pings hosts
+  hosts: database
+  tasks: 
+  - name: Pings our hosts
+    ping: 

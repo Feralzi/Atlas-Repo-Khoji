@@ -1,0 +1,41 @@
+---
+- name: Set up LAMP server
+  hosts: webservers
+  become: yes
+
+  tasks: 
+    - name: installs apache
+      package:
+        name: httpd
+        state: latest
+
+    - name: Start and enable apache
+      service: 
+        name: httpd
+        state: started
+        enabled: true
+
+    - name: Installs the SQL package
+      package:
+        name:
+          - mariadb
+          - mariadb-server
+        state: latest
+
+    - name: Start and enable MariaDB service
+      service: 
+        name: mariadb
+        state: started
+        enabled: true
+
+    - name: Installs the PHP package
+      package:
+        name: php
+        state: latest
+
+    - name: Edit the php file
+      lineinfile:
+        path: /var/www/html/index.php
+        line: I created this with Ansible
+        create: yes
+        state: present

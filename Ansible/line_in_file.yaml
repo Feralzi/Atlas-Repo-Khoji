@@ -1,0 +1,11 @@
+---
+- name: Write a line in a text
+  hosts: all
+  become: yes
+
+  tasks: 
+  - name: Writes a line in a text file
+    ansible.builtin.lineinfile:
+      path: /tmp/copyfile.txt
+      create: yes
+      line: "Hello World"

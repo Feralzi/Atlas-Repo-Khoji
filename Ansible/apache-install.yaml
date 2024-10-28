@@ -1,0 +1,10 @@
+---
+- name: Installs Apache # Description of the playbook
+  hosts: webservers # Target group
+  become: yes # Gives admin permissions
+
+  tasks: 
+  - name: Install httpd package #This is a description of the tasks
+    yum:
+      name: httpd
+      state: latest

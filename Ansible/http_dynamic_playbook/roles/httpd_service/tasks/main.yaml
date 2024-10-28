@@ -1,0 +1,5 @@
+- name: This will start the httpd
+  service:
+    name: httpd
+    state: started
+    enabled: yes

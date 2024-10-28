@@ -1,0 +1,12 @@
+---
+- name: Install nginx
+  package:
+    name: "{{ package_name }}"
+    state: latest
+
+- name: Start and Enable nginx
+  service:
+    name: "{{ package_name }}"
+    state: started
+    enabled: yes
+  
