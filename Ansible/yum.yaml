@@ -1,0 +1,10 @@
+---
+- name: Yum playbook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Installs firewalld
+    yum: 
+      name: tmux
+      state: latest

@@ -1,0 +1,7 @@
+- name: Edit the html file
+  lineinfile:
+    path: /var/www/html/index.html
+    line: I created this with Ansible. Second time
+    create: yes
+    state: present
+  notify: Restart httpd

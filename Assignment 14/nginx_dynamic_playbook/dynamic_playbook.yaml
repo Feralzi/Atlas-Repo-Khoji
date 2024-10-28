@@ -1,0 +1,6 @@
+---
+- name: Playbook to install and start nginx
+  hosts: webservers
+  become: yes
+  roles:
+    - webserver

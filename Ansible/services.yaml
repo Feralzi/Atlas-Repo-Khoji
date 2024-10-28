@@ -1,0 +1,10 @@
+---
+- name: Manage services
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: turns on tmux
+    service: 
+      name: tmux
+      state: started

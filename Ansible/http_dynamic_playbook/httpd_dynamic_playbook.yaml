@@ -1,0 +1,7 @@
+---
+- name: Installing httpd / Starting httpd
+  hosts: all
+  become: yes
+  roles:
+    - httpd_package
+    - httpd_index
