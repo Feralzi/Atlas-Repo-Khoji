@@ -1,10 +1,10 @@
 resource "aws_instance" "ec2-instance" {
-  ami                         = "var.ami"
+  ami                         = "ami-050cd642fd83388e4"
   associate_public_ip_address = true
-  availability_zone           = "var.availability_zone"
-  instance_type               = "var.instance_type"
+  availability_zone           = "us-east-2a"
+  instance_type               = "t2.micro"
   tags = {
-    "Name" = "var.instance_name"
+    "Name" = "TerraformT2"
   }
 
 }
