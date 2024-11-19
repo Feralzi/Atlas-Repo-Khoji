@@ -1,0 +1,32 @@
+services:
+  web:
+    image: httpd:latest
+    container_name: web_container
+    networks:
+      - webnet
+    ports:
+      - "5050:80"
+    volumes:
+      - ./app:/usr/local/apache2/htdocs/
+
+  app:
+    image: myapp:latest
+    container_name: app_container
+    networks:
+      - webnet
+    depends_on:
+      - db
+    
+  db:
+    image: mysql:latest
+    container_name: db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: EXAMPLE
+    networks:
+      - dbnet
+    
+networks:
+  webnet:
+    driver: bridge
+  dbnet:
+    driver: bridge
