@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: eks-chase-ns-admin-rb
+  namespace: chase
+subjects:
+- kind: User
+  name: eks
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: chase-ns-admin
+  apiGroup: rbac.authorization.k8s.io
