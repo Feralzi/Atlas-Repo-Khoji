@@ -1,0 +1,67 @@
+[17:15:13] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:15:15] [ServerMain/INFO]: No existing world data, creating new world
+[17:15:15] [ServerMain/INFO]: Loaded 1337 recipes
+[17:15:16] [ServerMain/INFO]: Loaded 1448 advancements
+[17:15:16] [Server thread/INFO]: Starting minecraft server version 1.21.3
+[17:15:16] [Server thread/INFO]: Loading properties
+[17:15:16] [Server thread/INFO]: Default game type: SURVIVAL
+[17:15:16] [Server thread/INFO]: Generating keypair
+[17:15:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:15:16] [Server thread/INFO]: Using epoll channel type
+[17:15:16] [Server thread/INFO]: Preparing level "world"
+[17:15:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:15:29] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:30] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:31] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:31] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:31] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:31] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:32] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:33] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:34] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:34] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:34] [Worker-Main-1/INFO]: Preparing spawn area: 2%
+[17:15:34] [Worker-Main-1/INFO]: Preparing spawn area: 10%
+[17:15:35] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[17:15:35] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[17:15:36] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[17:15:36] [Worker-Main-1/INFO]: Preparing spawn area: 22%
+[17:15:37] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:37] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:38] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:38] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:39] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:39] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:40] [Worker-Main-1/INFO]: Preparing spawn area: 26%
+[17:15:40] [Server thread/INFO]: Time elapsed: 11451 ms
+[17:15:40] [Server thread/INFO]: Done (24.207s)! For help, type "help"
+[17:15:40] [Server thread/INFO]: Starting remote control listener
+[17:15:40] [Server thread/INFO]: Thread RCON Listener started
+[17:15:40] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[17:16:40] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[17:24:57] [Server thread/WARN]: handleDisconnection() called twice
+[17:34:00] [User Authenticator #1/INFO]: UUID of player Feralzi is 22fa644d-1783-43b4-8c84-11b2ced82165
+[17:34:01] [Server thread/INFO]: Feralzi[/69.114.212.33:63098] logged in with entity id 16 at (-491.5, 85.0, -335.5)
+[17:34:01] [Server thread/INFO]: Feralzi joined the game
+[17:34:05] [Server thread/INFO]: Feralzi lost connection: Disconnected
+[17:34:05] [Server thread/INFO]: Feralzi left the game
+[17:34:33] [User Authenticator #2/INFO]: UUID of player Feralzi is 22fa644d-1783-43b4-8c84-11b2ced82165
+[17:34:33] [Server thread/INFO]: Feralzi[/69.114.212.33:63177] logged in with entity id 60 at (-491.5, 85.0, -335.5)
+[17:34:33] [Server thread/INFO]: Feralzi joined the game
+[17:34:50] [Server thread/INFO]: Feralzi lost connection: Disconnected
+[17:34:50] [Server thread/INFO]: Feralzi left the game
+[17:35:50] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[17:36:24] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[17:36:24] [Server thread/INFO]: [Rcon: Stopping the server]
+[17:36:24] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[17:36:24] [Server thread/INFO]: Stopping server
+[17:36:24] [Server thread/INFO]: Saving players
+[17:36:24] [Server thread/INFO]: Saving worlds
+[17:36:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:36:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[17:36:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[17:36:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:36:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:36:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:36:26] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:36:26] [Server thread/INFO]: Thread RCON Listener stopped

@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: web-app
+  name: hw-pod-rolebinding
+subjects:
+- kind: User
+  name: hw
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: hw-pod-role
+  apiGroup: rbac.authorization.k8s.io

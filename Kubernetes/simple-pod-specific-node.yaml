@@ -1,0 +1,11 @@
+apiVersion: v1 # specifies the API version of the kubernetes resource
+kind: Pod # defining the type of resource being created
+metadata: # data about the pod
+  name: nginx-pod2 # name of the pod
+spec: # configuration of the pod, what the pod will be holding
+  nodeName: ip-10-0-1-42.us-east-2.compute.internal
+  containers:
+  - name: nginx-container # name of the container
+    image: nginx:latest # image to use for this container
+    ports: # define the port that will be exposed by the container
+    - containerPort: 80 # exposing port 80 for container

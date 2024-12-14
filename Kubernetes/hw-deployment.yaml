@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw-nginx
+  namespace: web-app
+  labels:
+    app: hw-nginx
+spec:
+  selector:
+    matchLabels:
+      app: hw-nginx
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: hw-nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:latest
+          ports:
+          - containerPort: 80

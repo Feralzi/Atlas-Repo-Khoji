@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: grafana
+  name: grafana2
+  labels:
+      app: grafana2
+spec: 
+  containers:
+  - name: grafana2
+    image: grafana/grafana:latest
+    ports:
+    - containerPort: 3000
+    resources:
+      limits:
+        cpu: 100m
+        memory: 240Mi
+      requests:
+        cpu: 50m
+        memory: 120Mi
+  nodeSelector:
+    number: two
